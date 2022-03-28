@@ -1,0 +1,37 @@
+
+    body{
+        text-align: center !important;
+        background: radial-gradient(rgba(231, 147, 151, 0.562), rgba(152, 152, 231, 0.432));
+    }
+    .custom{
+        background-color: rgba(53, 88, 102, 0.185);
+    }
+
+p{
+	margin-top: 20px;
+	font-size: 30px;
+}
+input{
+	text-align: center;
+}
+.mssg{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+#signup{ /*justify-items: center;*/
+   margin-top:12.5%;
+   border-radius: 10px;
+}
+#login{
+    margin-top:12.5%;
+    border-radius: 10px;
+}
+#forget{
+    margin-top:12.5%;
+    border-radius: 10px;
+}
+#data{
+    margin-top:12.5%;
+    border-radius: 10px;
+}
