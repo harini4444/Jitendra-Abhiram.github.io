@@ -70,9 +70,29 @@
         }
 
         .box:hover {
-            transform: scale(1.5);
+            transform: scale(1.4);
             z-index: 2;
         }
+        @media (max-width:800px){
+        .container{
+        flex-direction: column;
+        margin: 0%;
+         }
+        .box{
+            margin:5%;
+            margin-left:20% ;
+            /* margin-right: 20%; */
+        }
+    } 
+        @media (max-width:500px){
+         *{
+             margin: 0%;
+         }
+        .box{
+            margin:5%; 
+        }
+    } 
+
     </style>
     <title>gallery</title>
     <!-- Required meta tags -->
