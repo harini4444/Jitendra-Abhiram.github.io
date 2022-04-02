@@ -79,7 +79,7 @@ nav img {
     color: #fff;
 }
 
-.hero-btn {
+.centerbtn {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -92,7 +92,7 @@ nav img {
     border-radius: 10px;
 }
 
-.hero-btn:hover {
+.centerbtn:hover {
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
