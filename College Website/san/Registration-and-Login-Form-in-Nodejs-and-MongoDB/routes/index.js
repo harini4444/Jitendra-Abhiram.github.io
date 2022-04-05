@@ -2,16 +2,17 @@ var express = require('express');
 var router = express.Router();
 var User = require('../models/user');
 
-router.get('/', function (req, res, next) {
+// data is being requested
+router.get('/', function(req , res, next)  {
 	return res.render('index.ejs');
 });
 
-
+// data is send to be processed
 router.post('/', function(req, res, next) {
 	console.log(req.body);
 	var personInfo = req.body;
 
-
+     // conformation of user details     
 	if(!personInfo.email || !personInfo.username || !personInfo.password || !personInfo.passwordConf){
 		res.send();
 	} else {
@@ -56,13 +57,13 @@ router.post('/', function(req, res, next) {
 		}
 	}
 });
-
+   // data is being requested from login.ejs
 router.get('/login', function (req, res, next) {
 	return res.render('login.ejs');
 });
 
+//  data is send to be processed from login.ejs
 router.post('/login', function (req, res, next) {
-	//console.log(req.body);
 	User.findOne({email:req.body.email},function(err,data){
 		if(data){
 			
@@ -80,7 +81,7 @@ router.post('/login', function (req, res, next) {
 		}
 	});
 });
-
+   // data is being requested from data.ejs
 router.get('/profile', function (req, res, next) {
 	console.log("profile");
 	User.findOne({unique_id:req.session.userId},function(err,data){
@@ -94,9 +95,7 @@ router.get('/profile', function (req, res, next) {
 		}
 	});
 });
-
-
-
+  // data is being requested from logout.ejs
 router.get('/logout', function (req, res, next) {
 	console.log("logout")
 	if (req.session) {
@@ -110,14 +109,12 @@ router.get('/logout', function (req, res, next) {
     });
 }
 });
-
+     //data is being requested from forget.ejs
 router.get('/forgetpass', function (req, res, next) {
 	res.render("forget.ejs");
 });
-
-router.post('/forgetpass', function (req, res, next) {
-	//console.log('req.body');
-	//console.log(req.body);
+  // data is send to be processed from forget.ejs
+ router.post('/forgetpass', function (req, res, next) {
 	User.findOne({email:req.body.email},function(err,data){
 		console.log(data);
 		if(!data){
