@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
+  // user schema
 userSchema = new Schema( {
 	
 	unique_id: Number,
