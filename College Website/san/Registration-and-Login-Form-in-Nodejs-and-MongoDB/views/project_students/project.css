@@ -1,111 +1,90 @@
  * {
-     margin: 0px;
-     padding: 0px;
+     margin: 0px;/*margin for all*/
+     padding: 0px;/*padding for all*/
  }
-
+ body {
+    /* for background image */
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0.5) 50%),
+      url(Campuspic.jpg);
+    background-repeat: no-repeat; /*image will not repeat */
+    background-attachment: fixed; /*image is fixed , which does not move */
+    background-size: cover;/*it cover the full screen*/
+  } 
  .links a li {
-     list-style: none;
-
+     list-style: none;/*list style is none*/
  }
 
  .links ul a {
-     font-size: 20px;
-     font-weight: 20px;
+     font-size: 20px;/*size of text*/
+     font-weight: 20px;/* thickness of text*/
      margin: 20px;
      color: rgb(246, 245, 246);
      display: inline-flex;
-     text-decoration: none;
+     text-decoration: none;/*text decoration is none */
      padding-left: 40px;
-     /* z-index: 5; */
  }
 
- .links a:hover {
-     color: rgb(177, 83, 83);
+ .links a:hover { /*hover effect */
+     color: rgb(177, 83, 83);/*on hover, color of text is red*/
  }
 
  .links {
-     opacity: 0.7;
-     box-shadow: 0px 0px 250px black inset;
-     align-items: center;
+     opacity: 0.7;/*used to make transparent*/
+     box-shadow: 0px 0px 250px black inset;/*shadow of box inside it*/
+     align-items: center;/*align all items in center*/
     }
- footer
-{ 
-  background-color: #111;
-  height: auto;
-  /*width:100vw;*/
-  font-family:"Open Sans";
-  padding-top:20px;
-  color: #fff;
-
-}
-.footer-content{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.social{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 3rem 0 3rem;
-}
-.social li{
+    footer { 
+        background-color: #111;
+        height: auto;
+        font-family:"Open Sans";/*changing font family*/
+        padding-top:20px;
+        color: #fff;
+     }
+  
+    .footer-content{
+         display:flex;/*display items in one line with equal space in between */
+         align-items: center;/* align items in center by vertically  */
+         justify-content: center;/* align items in center by horizontally  */
+         flex-direction: column;/*items arrange in columns  */
+         text-align: center; /* align items in center */
+     }
+    .social{
+        list-style: none;/*style of list is none */
+        display: flex;/*display items in one line with equal space in between*/
+        align-items: center;/* align items in center by vertically  */
+        justify-content: center;/* align items in center by horizontally  */
+        margin: 0 3rem 0 3rem;/*margin*/
+    }
+    .social li{
         margin: 0px 10px;
-
-}
-.social a{
-    text-decoration: none;
-    color:#fff;
-}
-.social a i{
-     font-size: 1.1 rem;
-     transition:color .4s ease; 
-
-}
-.social a:hover i{
-    color:aqua;
-}
-.footer-bottom{
-    background: #000;
-    /*width: 100vw;*/
-    padding:20px 0;
-    text-align:center;
-}
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform:capitalize;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-
-
- /*#foot {
-   
-     background-color: #000000;
-     /* margin-top:70vh; 
-
- }
-
- p {
-     color: white;
-     padding-left: 30px;
-     padding-top: 20px;
- }
-
- .icons a {
-     margin: 5%;
-     padding-top: 10vh;
- }
-
- .icons {
-     padding-left: 70%;
- }*/
-
-
+    }
+    .social a{
+      text-decoration: none;/*decoration for text is none */
+      color:#fff;/* text color*/
+    }
+     .social a i{
+       font-size: 1.1 rem;/*font size in rem*/
+       transition:color .4s ease; /*transition time */
+  
+     }
+     .social a:hover i{
+      color:aqua;
+     }
+     .footer-bottom{
+      background: #000;/*background for footer-bottom part*/
+      padding:20px 0;
+      text-align:center;/*align text in center*/
+     }
+     .footer-bottom p{
+      font-size: 14px;
+      word-spacing: 2px;/*space between each word */
+      text-transform:capitalize;/*text transform into capital letters*/
+     }
+     .footer-bottom span{
+      text-transform: uppercase;/*text transform into capital letters*/
+      opacity: .4;/*used to make transparent  */
+      font-weight: 200;/*thickness of font*/
+     }
+  
