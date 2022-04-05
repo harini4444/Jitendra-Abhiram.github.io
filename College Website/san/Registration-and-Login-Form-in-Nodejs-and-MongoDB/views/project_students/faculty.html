@@ -3,26 +3,27 @@
 
 <head>
     <style>
-        body {
-            /* height: 100vh; */
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(Campuspic.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            /* display:flex; */
-            /* align-items: center; */
-        }
+       body {
+      /* for background image */
+      background: linear-gradient(to top,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(0, 0, 0, 0.5) 50%),
+        url(Campuspic.jpg);
+      background-repeat: no-repeat; /*image will not repeat */
+      background-attachment: fixed; /*image is fixed , which does not move */
+      background-size: cover;/*it cover the full screen*/
+    } 
 
-        nav {
-            background-color: rgb(46, 51, 54);
-            color: aliceblue;
-            font-size: 100px;
-            opacity: 0.7;
-        }
+      nav {
+      /*styles for navbar*/
+      background-color: rgb(46, 51, 54);
+      color: aliceblue;
+      font-size: 100px; 
+      opacity: 0.7; /*used to make transparent  */
+      }
 
         #first {
             background-color: aliceblue;
-
         }
 
         .names {
@@ -34,63 +35,58 @@
             color: rgb(23, 20, 220);
         }
 
-     
-footer
-{ 
-  background-color: #111;
-  height: auto;
-  /* width:100vw; */
-  font-family:"Open Sans";
-  padding-top:20px;
-  color: #fff;
+        footer { 
+      background-color: #111;
+      height: auto;
+      font-family:"Open Sans";/*changing font family*/
+      padding-top:20px;
+      color: #fff;
+   }
 
-}
-.footer-content{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.social{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 3rem 0 3rem;
-}
-.social li{
-        margin: 0px 10px;
+  .footer-content{
+       display:flex;/*display items in one line with equal space in between */
+       align-items: center;/* align items in center by vertically  */
+       justify-content: center;/* align items in center by horizontally  */
+       flex-direction: column;/*items arrange in columns  */
+       text-align: center; /* align items in center */
+   }
+  .social{
+      list-style: none;/*style of list is none */
+      display: flex;/*display items in one line with equal space in between*/
+      align-items: center;/* align items in center by vertically  */
+      justify-content: center;/* align items in center by horizontally  */
+      margin: 0 3rem 0 3rem;/*margin*/
+  }
+  .social li{
+      margin: 0px 10px;
+  }
+  .social a{
+    text-decoration: none;/*decoration for text is none */
+    color:#fff;/* text color*/
+  }
+   .social a i{
+     font-size: 1.1 rem;/*font size in rem*/
+     transition:color .4s ease; /*transition time */
 
-}
-.social a{
-    text-decoration: none;
-    color:#fff;
-}
-.social a i{
-     font-size: 1.1 rem;
-     transition:color .4s ease; 
-
-}
-.social a:hover i{
+   }
+   .social a:hover i{
     color:aqua;
-}
-.footer-bottom{
-    background: #000;
-    /* width: 100vw; */
+   }
+   .footer-bottom{
+    background: #000;/*background for footer-bottom part*/
     padding:20px 0;
-    text-align:center;
-}
-.footer-bottom p{
+    text-align:center;/*align text in center*/
+   }
+   .footer-bottom p{
     font-size: 14px;
-    word-spacing: 2px;
-    text-transform:capitalize;
-}
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
+    word-spacing: 2px;/*space between each word */
+    text-transform:capitalize;/*text transform into capital letters*/
+   }
+   .footer-bottom span{
+    text-transform: uppercase;/*text transform into capital letters*/
+    opacity: .4;/*used to make transparent  */
+    font-weight: 200;/*thickness of font*/
+   }
     </style>
     <title>faculty_details</title>
     <!-- Required meta tags -->
@@ -104,7 +100,7 @@ footer
 </head>
 
 <body>
-    <nav class="container-fuild">
+    <nav class="container-fuild"><!--it is bootstrap class,which create a container and has no margin-left and margin-right -->
         <p><i>Faculty</i></p>
     </nav>
     <div class="container" id="first">
@@ -175,7 +171,8 @@ footer
             <br>
         </div>
     </div>
-    <div>
+
+        <!--footer part-->
         <footer>
             <div class="footer-content ">
                 <ul class="social">
@@ -188,9 +185,8 @@ footer
             <div class="footer-bottom">
                 <p>copyright &copy;2022 IIIT Lucknow</p>
             </div>
-
         </footer>
-    </div>
+ 
 </body>
 
 </html>
