@@ -1,4 +1,4 @@
- // Node js  Frameworks
+ // Node js  Frameworks    //sanchit
 var express = require('express');
 var env = require('dotenv').config()
 var ejs = require('ejs');
@@ -12,7 +12,7 @@ var mongoose = require('mongoose');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
  
-// mongoose connection
+// mongoose connection //jitendra
 mongoose.connect('mongodb+srv://Sanchit:Gupta12345@cluster0.tj23u.mongodb.net/sign_up?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -27,7 +27,7 @@ mongoose.connect('mongodb+srv://Sanchit:Gupta12345@cluster0.tj23u.mongodb.net/si
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
-});
+});  //Jitendra
 
 // user assigned a unique session
 app.use(session({
