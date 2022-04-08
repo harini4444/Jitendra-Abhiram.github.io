@@ -12,7 +12,7 @@ router.post('/', function(req, res, next) {
 	console.log(req.body);
 	var personInfo = req.body;
 
-     // conformation of user details     
+     // confirmation of user details     
 	if(!personInfo.email || !personInfo.username || !personInfo.password || !personInfo.passwordConf){
 		res.send();
 	} else {
